@@ -1,4 +1,4 @@
-[]("https://github.com/jusspatel/iPhoneCalcRIP-OFF/blob/main/logo.png")
+![](https://github.com/jusspatel/iPhoneCalcRIP-OFF/blob/main/logo.png)
 # iPhoneCalcRIP-OFF
 This is a rip off of the classical iPhone Calculator . This project has been made with PyQT5
 
