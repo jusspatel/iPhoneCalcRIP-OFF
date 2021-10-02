@@ -21,3 +21,4 @@ While making it as close to the iPhone Calculator possible , i had to use the ev
 ## Screenshot :
 ![](https://github.com/jusspatel/iPhoneCalcRIP-OFF/blob/main/Screenshot%20(373).png)
 
+## Made With Python 3.6.8 and works with Python 3.x
