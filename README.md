@@ -19,6 +19,6 @@ Yeah well , its a regular calculator . Nothing much different about it <br>
 While making it as close to the iPhone Calculator possible , i had to use the eval() function , which has a history of not going down well with decimals . So , sometimes in decimal calculations , the answer will have a lot of trailing zeroes . In the future I will most likely switch to the`Decimal` Module to resolve  this problem . Till then , one can only cope :/
 
 ## Screenshot :
-![](https://github.com/jusspatel/iPhoneCalcRIP-OFF/blob/main/Screenshot%20(373).png)
+![](https://github.com/jusspatel/iPhoneCalcRIP-OFF/blob/main/Screenshot%20(390).png)
 
 ## Made With Python 3.6.8 and works with Python 3.x
