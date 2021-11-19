@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
         
   
         # setting image to the button
-        self.button22.setStyleSheet("background-image: url(C:/Users/admin/Downloads/close-removebg-preview.ico);")
+        self.button22.setStyleSheet("background-image: url(close-removebg-preview.ico);")
                 
         MainWindow.setCentralWidget(self.centralwidget)
 
