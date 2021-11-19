@@ -8,7 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt,QCoreApplication
 
 
 class Ui_MainWindow(object):
@@ -249,7 +249,17 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setGeometry(QtCore.QRect(70, 474, 151, 5))
         self.pushButton.setStyleSheet(u"background-color:rgb(212,212,210);\n""")
+        self.button22 = QtWidgets.QPushButton(self.centralwidget)
+  
+        # setting geometry of button
+        self.button22.setGeometry(14, 10,16, 16)
+  
+        # adding action to a button
         
+  
+        # setting image to the button
+        self.button22.setStyleSheet("background-image: url(C:/Users/admin/Downloads/close-removebg-preview.ico);")
+                
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -296,24 +306,26 @@ class Ui_MainWindow(object):
         self.pushButton_9.clicked.connect(self.action_equal)
         self.pushButton_6.clicked.connect(self.uno)
         self.pushButton_5.clicked.connect(self.moduleo)
+        self.button22.clicked.connect(QCoreApplication.instance().quit)
+        #self.button23.clicked.connect(self.showMinimized)
+    '''def clickme(self):
+        w = QtWidgets.QWidget()
+        self.w.close()'''
     def action_equal(self):
   
         # get the label text
         equation = self.lineEdit.text()
-        if equation == "close":
-            sys.exit()
-        else:
-            try:
-             
-                # getting the ans
-                ans =eval(equation)
-      
-                # setting text to the label
-                self.lineEdit.setText(str(ans))
-      
-            except:
-                # setting text to the label
-                self.lineEdit.setText("Wrong Input")
+        try:
+        
+            # getting the ans
+            ans =eval(equation)
+
+            # setting text to the label
+            self.lineEdit.setText(str(ans))
+
+        except:
+            # setting text to the label
+            self.lineEdit.setText("Wrong Input")
     def uno(self):
         text = self.lineEdit.text()
         self.lineEdit.setText(text[:len(text)-1])
